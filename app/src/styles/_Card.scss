@@ -1,0 +1,143 @@
+@import "colors";
+@import "functions";
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}  
+
+body {
+    font-family: "Space Grotesk", sans-serif;
+}
+
+.App {
+    @include desktop-version {
+        display: flex;
+        height: 100vh;
+        align-items: center;
+    }
+}
+
+#Card {
+    position: relative;
+    height: 240px; 
+    background-image: url(../images/bg-main-mobile.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 6.5rem;
+    color: $Light-grayish-violet;
+    @include desktop-version {
+        background-image: url(../images/bg-main-desktop.png);
+        background-size: unset;
+        width: 483px;
+        height: 100vh;
+        margin-bottom: 0;
+        margin-right: 350px;
+    }
+    .card-container {
+        @include desktop-version {
+            position: absolute;
+            width: 541px;
+            height: 527px;
+            left: 164px;
+            top: 0;
+            bottom: 0;
+            margin: auto 0;
+        }
+    }
+    .card {
+        width: 286px;
+        height: 157px;
+        background-repeat: no-repeat;  
+        background-size: contain; 
+        @include desktop-version {
+            width: 447px;
+            height: 245px;
+        }
+    }
+    .card-back {
+        position: absolute;
+        right: 16px;
+        bottom: 51px;
+        background-image: url(../images/bg-card-back.png);
+        @include desktop-version {
+            right: 0;
+            bottom: 0;
+        }
+        &-cvc {
+            position: absolute;
+            top: 72px;
+            right: 36px;
+            font-size: 11px;
+            @include desktop-version {
+                top: 111px;
+                right: 57px;
+                font-size: 18px;
+            }
+        }
+    }
+    .card-front {
+        position: absolute;
+        left: 16px;
+        bottom: -43px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 19px;
+        background-image: url(../images/bg-card-front.png);
+        @include desktop-version {
+            padding: 32px 27px;
+            top: 0;
+            left: 0;
+        }
+        &-header {
+            display: flex;
+            align-items: center;
+            .big-circle {
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                background-color: $White;
+                margin-right: 8px;
+                @include desktop-version {
+                    width: 47px;
+                    height: 47px;
+                    margin-right: 12px;
+                }
+            }
+            .small-circle {
+                width: 13.5px;
+                height: 13.5px;
+                border-radius: 50%;
+                border: 1px solid $White;
+                @include desktop-version {
+                    width: 21px;
+                    height: 21px;
+                }
+            }
+        }
+        &-middle {
+            margin-top: 18px;
+            font-size: 20px;
+            letter-spacing: 1.1px;
+            @include desktop-version {
+                font-size: 32px;
+                letter-spacing: 2px;
+            }
+        }
+        &-bottom {
+            display: flex;
+            justify-content: space-between;
+            font-size: 11px;
+            @include desktop-version {
+                font-size: 18px;
+            }
+            &-name {
+                text-transform: uppercase;
+                letter-spacing: 1.5px;
+            }
+        }
+    }
+}

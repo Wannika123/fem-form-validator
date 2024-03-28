@@ -1,0 +1,70 @@
+@import "colors";
+@import "functions";
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
+
+form {
+    width: 85%;
+    max-width: 24rem;
+    margin: 0 auto;
+    label {
+        text-transform: uppercase;
+        color: $Very-dark-violet;
+    }
+    input {
+        width: 100%;
+        font-size: 1.25rem;
+        padding: 0.75rem 16px;
+        border: 2px solid $Light-grayish-violet;
+        border-radius: 10px;
+        margin: 0.5rem 0 1.625rem 0;
+        outline-color: darkviolet;
+    }
+    .third-line-form {
+        display: flex;
+        label {
+            width: 50%;
+        }
+        .date-label {
+            input {
+                width: 45%;
+                margin-right: 3px;
+            }
+        }
+    }
+    button {
+        width: 100%;
+        padding: 1rem;
+        border: none;
+        border-radius: 10px;
+        background-color: $Very-dark-violet;
+        color: $White;
+        font-size: 1.25rem;
+        margin: 0.5rem 0;
+    }
+}
+
+::placeholder {
+    color: $Dark-grayish-violet;
+}
+
+::-ms-input-placeholder {
+    color: $Dark-grayish-violet;
+}
+
+.warning {
+    text-transform: lowercase;
+    font-size: 15px;
+    color: red;
+    margin-top: -1rem;
+    margin-bottom: 1rem;
+}
+
+input:has(+ .warning) {
+    border-color: red;
+    outline-color: red;
+}
+
+#month:has(~ .warning) {
+    border-color: red;
+    outline-color: red;
+}
