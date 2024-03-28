@@ -29,18 +29,22 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+- desktop
 
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
+![Screen Shot 2567-03-28 at 16 12 42](https://github.com/Wannika123/fem-form-validator/assets/142564014/c270289d-651b-4d70-96da-e6d183149580)
 
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
+- form filled
 
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
+![Screen Shot 2567-03-28 at 16 14 34](https://github.com/Wannika123/fem-form-validator/assets/142564014/f8cd63cb-e3a3-4c4e-8e1d-6536d79cfbca)
+
+- Mobile completed state
+
+![Screen Shot 2567-03-28 at 16 15 59](https://github.com/Wannika123/fem-form-validator/assets/142564014/7bd47ec2-3960-4cca-9a80-ad3f6706582e)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [GitHub repo](https://github.com/Wannika123/fem-form-validator)
+- Live Site URL: [Netlify](https://6605344708e40d6e1be36343--moonlit-torte-50f056.netlify.app/)
 
 ## My process
 
